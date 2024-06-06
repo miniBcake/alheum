@@ -34,10 +34,13 @@
   user-select: none;
 }
 
+
 /* 푸터 */
 .footerContainer {
   width: 970px;
-  margin: auto;
+  margin: 10px auto;
+  border-top: 1px solid #d3d3d3;
+
 }
 
 .footerText li:nth-of-type(5) a,
@@ -45,12 +48,17 @@
   font-weight: bold;
 }
 
-li {
+.footerContainer li {
   list-style: none;
+  font-size: 14px;
+  color: var(--font-color-grey);
 }
 
-a {
+.footerContainer a {
   text-decoration: none;
+  font-size: 14px;
+  color: var(--font-color-grey);
+  font-weight: 500;
 }
 
 .footerText1 {

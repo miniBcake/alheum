@@ -13,135 +13,124 @@
   <!-- main JS -->
   <script defer th:src="@{/js/protectorMain-mainNonMember.js}"></script>
   <!-- header CSS -->
-  <link rel="stylesheet" th:href="@{/css/header-ver2NonMember.css}">
-  <link rel="stylesheet" th:href="@{/css/header-ver2Member.css}">
+  <link rel="stylesheet" th:href="@{/css/headerNonMember.css}">
+<!--  <link rel="stylesheet" th:href="@{/css/headerMember.css}">-->
   <!-- footer CSS -->
   <link rel="stylesheet" th:href="@{/css/footer.css}">
 </head>
 <body>
-  <header th:replace="~{/basic/header-ver2 :: header2}"></header>
-  
+  <header th:replace="~{/basic/header-ver1 :: header1}"></header>
+
   <main>
-    <!-- 메인 컨테이너 -->
-    <div class="protectorMain">
-      <!-- 메인 상단 -->
-      <div class="protectorMain-topCnt">
-        <!-- 배경 -->
-        <div class="protectorMain-topImg">
-          <div class="protectorMain-topText">
-            <p>"알흠(謁欽)"</p>
+    <!-- 메인 상단 -->
+    <section class="protectorMain-topCnt">
+      <!-- 배경 -->
+      <nav class="protectorMain-topImg">
+        <a th:href="@{#}" class="nav-button gree">
+          <div>어르신 전용</div>
+          <img th:src="@{/img/buttoncss_1.png}" />
+          <img class="notice" th:src="@{/img/notice.png}" />
+        </a>
+        <a th:href="@{#}" class="nav-button red">
+          <div>공지사항</div>
+          <img th:src="@{/img/buttoncss_2.png}" />
+        </a>
+        <a th:href="@{#}" class="nav-button blue">
+          <div>보호자 설문</div>
+          <img th:src="@{/img/buttoncss_3.png}" />
+        </a>
+        <a th:href="@{#}" class="nav-button yell">
+          <div>커뮤니티</div>
+          <img th:src="@{/img/buttoncss_4.png}" />
+        </a>
+      </nav>
+    </section>
+    <section id="part">
+      <!-- 공지사항 -->
+      <div class="protectorMain-notice">
+        <h1>공지사항</h1>
+        <a class="add" th:href="@{#}">더보기 &#10095;</a>
+        <section class="articlebox">
+          <article>
+            <h3>testdddddddddddddddddddddddddddddddddddddddddddd</h3>
             <p>
-              "알리다" 와 "공경"을 합친 말로,
-              <br>
-              윗사람을 공경하자는 마음을 널리 퍼트리자는 의미를 담고 있습니다.
-              <br>
-              대표 상징인 지문은 공경하는 마음을 변하지 않겠다는 의지를 보여줍니다.
+              testdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
             </p>
-          </div>
-          <img src="/img/protectorMain-backgroundImg.png" alt="">
+          </article>
+          <article>
+            <h3>test</h3>
+            <p>
+              test
+            </p>
+          </article>
+        </section>
+      </div>
+      <!-- 커뮤 -->
+      <div class="protectorMain-commu">
+        <article class="commu-commu">
+          <h1>소통</h1>
+          <a class="add" th:href="@{#}">더보기 &#10095;</a>
+          <section class="articlebox">
+            <article>
+              <h3>test</h3>
+              <p>
+                test
+              </p>
+            </article>
+            <article>
+              <h3>test</h3>
+              <p>
+                test
+              </p>
+            </article>
+          </section>
+        </article>
+        <hr>
+        <article class="commu-commu">
+          <h1>시설후기</h1>
+          <a class="add" th:href="@{#}">더보기 &#10095;</a>
+          <section class="articlebox">
+            <article>
+              <h3>test</h3>
+              <p>
+                test
+              </p>
+            </article>
+            <article>
+              <h3>test</h3>
+              <p>
+                test
+              </p>
+            </article>
+          </section>
+        </article>
+      </div>
+      <!-- 광고 배너 -->
+      <div class="protectorMain-banner">
+        <div class="protectorMain-bannerMove">
+          <button>
+            <img th:src="@{/img/protectorMain-prev.png}" alt="" />
+          </button>
+          <button>
+            <img th:src="@{/img/protectorMain-next.png}" alt="" />
+          </button>
+        </div>
+
+        <div class="protectorMain-bannerCnt">
+          <ul class="protectorMain-bannerImg">
+            <a href="#">
+              <img th:src="@{/img/protectorMain-bannerImg.png}" alt="" />
+            </a>
+            <a href="#">
+              <img th:src="@{/img/protectorMain-bannerImg.png}" alt="" />
+            </a>
+            <a href="#">
+              <img th:src="@{/img/protectorMain-bannerImg.png}" alt="" />
+            </a>
+          </ul>
         </div>
       </div>
-      <!-- 상단 메뉴 바 -->
-      <div class="protectorMain-menubar">
-        <ul class="protectorMain-menubarCnt">
-          <li>
-            <a th:href="@{#}">인지기능검사</a>
-          </li>
-
-          <p>|</p>
-
-          <li>
-            <a th:href="@{#}">상태진단설문</a>
-          </li>
-
-          <p>|</p>
-
-          <li>
-            <a th:href="@{#}">검사결과</a>
-          </li>
-
-          <p>|</p>
-
-          <li>
-            <a th:href="@{#}">자주묻는질문</a>
-          </li>
-        </ul>
-      </div>
-      <!-- 메인 하단 -->
-      <div class="protectorMain-bottomCnt">
-        <!-- 공지사항 -->
-        <div class="protectorMain-notice">
-          <div class="protectorMain-noticeMove">
-            <p>공지사항</p>
-            <div class="protectorMain-noticeMoveBtn">
-              <button>
-                <img src="/img/protectorMain-prev.png" alt="">
-              </button>
-              <button>
-                <img src="/img/protectorMain-next.png" alt="">
-              </button>
-            </div>
-          </div>
-
-          <div class="protectorMain-noticebanner">
-            <ul class="protectorMain-noticeCnt">
-              <li>
-                <a th:href="@{#}"></a>
-              </li>
-
-              <li>
-                <a th:href="@{#}"></a>
-              </li>
-
-              <li>
-                <a th:href="@{#}"></a>
-              </li>
-
-              <li>
-                <a th:href="@{#}"></a>
-              </li>
-
-              <li>
-                <a th:href="@{#}"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- 광고 배너 -->
-        <div class="protectorMain-banner">
-          <div class="protectorMain-bannerMove">
-            <button>
-              <img src="/img/protectorMain-prev.png" alt="">
-            </button>
-            <button>
-              <img src="/img/protectorMain-next.png" alt="">
-            </button>
-          </div>
-
-          <div class="protectorMain-bannerCnt">
-            <ul class="protectorMain-bannerImg">
-              <li>
-                <a th:href="@{#}">
-                  <img src="/img/protectorMain-bannerImg.png" alt="">
-                </a>
-              </li>
-
-              <li>
-                <a th:href="@{#}">
-                  <img src="/img/protectorMain-bannerImg.png" alt="">
-                </a>
-              </li>
-
-              <li>
-                <a th:href="@{#}">
-                  <img src="/img/protectorMain-bannerImg.png" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer th:replace="~{/basic/footer :: footer}"></footer>

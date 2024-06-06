@@ -35,9 +35,14 @@
 }
 
 /* 헤더 */
+
+section{
+  background: white;
+}
+
 .header {
   width: 970px;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +50,7 @@
 }
 
 .headerLogo img {
-  width: 80px;
+  width: 70px;
 }
 
 li {
@@ -58,7 +63,7 @@ a {
 
 .headerNav {
   width: 600px;
-  height: 80px;
+  height: 100%;
 }
 
 .headerNav-container {
@@ -67,9 +72,9 @@ a {
 
 .headerNav-container li {
   width: 120px;
-  height: 80px;
+  height: 100%;
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
 }
 
 .headerNav-container li:hover {

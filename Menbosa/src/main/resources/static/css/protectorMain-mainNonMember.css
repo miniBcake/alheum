@@ -33,112 +33,174 @@
   user-select: none;
 }
 
+.protectorMain-topImg, #part{
+  width: 970px;
+  margin: 0 auto;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 /* 메인 */
 .protectorMain-topCnt {
-  background-color: #FE7A15;
+  background-image: url('./../img/Asset\ 1-8.png');
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 380px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.protectorMain-topImg {
-  width: 970px;
-  height: 450px;
-  margin: auto;
+nav{
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 264px;
+}
+
+.nav-button{
+  display: inline-flex;
+  width: 226px;
+  height: 88px;
+  border-radius: 10px;
+  padding: 18px;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.2);
 }
 
-.protectorMain-topText p {
-  color: white;
-}
-
-.protectorMain-topText p:nth-of-type(1) {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-.protectorMain-menubar {
-  width: 800px;
-  height: 80px;
-  border-radius: 20px;
-  background-color: white;
-  margin: auto;
-  position: relative;
-  bottom: 50px;
-  filter: drop-shadow(0px 5px 3px lightgrey);
-}
-
-.protectorMain-menubarCnt {
-  display: flex;
-  justify-content: space-between;
-  line-height: 80px;
-  width: 700px;
-  margin: auto;
-}
-
-.protectorMain-menubarCnt li {
-  width: 120px;
+.nav-button div{
+  width: 60%;
+  color: var(--font-color-white);
+  font-size: 22px;
+  font-weight: 600;
   text-align: center;
 }
 
-.protectorMain-menubarCnt li:hover {
-  transform: scale(1.2);
-  transition-duration: 0.5s;
+.nav-button img:not(.notice){
+  width: 60px;
+  height: 60px;
 }
 
-.protectorMain-menubarCnt li a {
+.notice{
+  position: absolute;
+  top: 86px;
+  visibility: hidden;
+  cursor: default;
+}
+
+
+.gree{background-color: var(--color-sub-gree);}
+.red{background-color: var(--color-main);}
+.yell{background-color: var(--color-sub-yell);}
+.blue{background-color: var(--color-sub-blue);}
+
+.gree:hover{
+  background-color: var(--color-sub-gree-hober);
+  position: relative;
+  top: -3px;
+}
+.gree:hover .notice{
+  visibility: visible;
+}
+
+.red:hover{
+  background-color: var(--color-main-hover);
+  position: relative;
+  top: -3px;
+}
+.yell:hover{
+  background-color: var(--color-sub-yell-hover);
+  position: relative;
+  top: -3px;
+}
+.blue:hover{
+  background-color: var(--color-sub-blue-hover);
+  position: relative;
+  top: -3px;
+}
+
+
+/* 공지사항 */
+.protectorMain-notice{
+  margin-top: 30px;
+  position: relative;
+}
+
+h1{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+h3{
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #686868;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 7px;
 }
 
-.protectorMain-bottomCnt {
-  width: 970px;
-  margin: auto;
+.add{
+  position: absolute;
+  top: 18px;
+  right: 4px;
+  color: var(--color-gray);
+  font-size: 12px;
 }
 
-.protectorMain-noticeMove {
+p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #686868;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break:break-all;
+}
+
+.articlebox{
   display: flex;
   justify-content: space-between;
 }
 
-.protectorMain-noticeMove p {
-  font-size: 24px;
-  color: #FE7A15;
+.protectorMain-notice article{
+  background-image: url(../img/noticeback.png);
+  background-repeat: no-repeat;
+  width: 474px;
+  height: 133px;
+  padding: 13px 18px;
 }
 
-.protectorMain-noticeMoveBtn button {
-  border: none;
-  background-color: white;
-}
-
-.protectorMain-noticeMoveBtn img {
-  width: 50px;
-  height: 50px;
-}
-
-.protectorMain-noticeMoveBtn img:hover {
-  cursor: pointer;
-}
-
-.protectorMain-noticebanner {
-  width: 970px;
-  overflow: hidden;
-}
-
-.protectorMain-noticeCnt {
-  width: 2000px;
+/* 커뮤 */
+.protectorMain-commu{
+  margin-top: 60px;
   display: flex;
+  justify-content: space-between;
+}
+.protectorMain-commu article{
+  width: 474px;
+  position: relative;
 }
 
-.protectorMain-noticeCnt li {
-  border: 1px solid red;
-  width: 220px;
-  height: 250px;
-  margin-right: 155px;
-  border-radius: 20px;
+.protectorMain-commu article article{
+  background-image: url(../img/commuback.png);
+  background-repeat: no-repeat;
+  width: 225px;
+  height: 155px;
+  padding: 13px 18px;
 }
 
+hr{
+  border: 1px solid rgb(236, 236, 236);
+}
+
+/* 배너 */
 .protectorMain-banner {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .protectorMain-bannerMove {
@@ -160,10 +222,10 @@
 }
 
 .protectorMain-bannerImg {
-  width: 2000px;
   display: flex;
 }
 
 .protectorMain-bannerImg img {
   width: 970px;
+  border-radius: 18px;
 }
