@@ -46,19 +46,20 @@ header{
 
 /* 메인 */
 .protectorMain-topCnt {
-  background-image: url('./../img/Asset\ 1-8.png');
+  background-image: url('./../img/Asset 1-8.png');
   background-repeat: no-repeat;
   width: 1200px;
   height: 380px;
   margin: 0 auto;
   position: relative;
+  overflow: visible;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
-  position: relative;
-  top: 264px;
+  position: absolute;
+  top: 325px;
 }
 
 .nav-button{
@@ -87,7 +88,8 @@ nav{
 
 .notice{
   position: absolute;
-  top: 86px;
+  top: 90px;
+  left: -2px;
   visibility: hidden;
   cursor: default;
 }
@@ -149,8 +151,9 @@ h3{
   position: absolute;
   top: 18px;
   right: 4px;
-  color: var(--color-gray);
+  color: var(--font-color-grey);
   font-size: 12px;
+  font-weight: 600;
 }
 
 p{

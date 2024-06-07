@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>footer</title>
+    <meta charset="UTF-8">
+    <title>footer</title>
 </head>
 <body>
 <footer th:fragment="footer">
-  <div class="footer">
-    <ul class="footerContainer">
-      <li>
-        <ul class="footerText1">
-          <li>
-            <a href="#">
-              알흠소개
-            </a>
-          </li>
-
-          <li>·</li>
-
-          <li>
-            <a href="#">
-              이용약관
-            </a>
-          </li>
-
-          <li>·</li>
-
-          <li>
-            <a href="#">
-              개인정보처리방침
-            </a>
-          </li>
-
-        </ul>
-      </li>
-
-      <li>
-        <ul class="footerText2">
-          <li>
-              주소 : 알흠도 알흠시 팀플이후구 디벨롭동  |  대표자 : 한지윤
-          </li>
-
-          <li>
-              전화문의 : 010-2657-3508  |  E-MAIL : uzzyjunior@gmail.com
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <ul class="footerText3">
-          <li>copyright ⓒ 2024 jiyoon</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <section class="footer">
+        <article class="footerContainer">
+            <div class="footerText1">
+                <a href="#">알흠소개</a>
+                <a>·</a>
+                <a href="#">이용약관</a>
+                <a>·</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+            <div class="footerText2">
+                <div>주소 : 알흠도 알흠시 팀플이후구 디벨롭동 | 대표자 : 한지윤</div>
+                <div>전화문의 : 010-2657-3508 | E-MAIL : uzzyjunior@gmail.com</div>
+            </div>
+            <div class="footerText3">copyright ⓒ 2024 jiyoon</div>
+        </article>
+    </section>
 </footer>
 </body>
 </html>

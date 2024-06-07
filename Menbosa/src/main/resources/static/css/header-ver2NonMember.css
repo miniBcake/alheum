@@ -52,24 +52,21 @@ header {
   width: 80px;
 }
 
-li {
+.header li {
   list-style: none;
 }
 
-a {
+.header a {
   text-decoration: none;
 }
 
 .headerNav {
-  width: 600px;
+  width: 500px;
   height: 80px;
-}
-
-.headerNav-container {
   display: flex;
 }
 
-.headerNav-container li {
+.headerNav-container a {
   width: 120px;
   height: 80px;
   text-align: center;
@@ -78,10 +75,6 @@ a {
 
 .headerNav-container li:hover {
   border-bottom: 2px solid white;
-}
-
-.headerNav-container a {
-  color: white;
 }
 
 .headerLogin {

@@ -14,7 +14,6 @@
   <script defer th:src="@{/js/protectorMain-mainNonMember.js}"></script>
   <!-- header CSS -->
   <link rel="stylesheet" th:href="@{/css/headerNonMember.css}">
-<!--  <link rel="stylesheet" th:href="@{/css/headerMember.css}">-->
   <!-- footer CSS -->
   <link rel="stylesheet" th:href="@{/css/footer.css}">
 </head>
@@ -25,27 +24,27 @@
     <!-- 메인 상단 -->
     <section class="protectorMain-topCnt">
       <!-- 배경 -->
-      <nav class="protectorMain-topImg">
-        <a th:href="@{#}" class="nav-button gree">
-          <div>어르신 전용</div>
-          <img th:src="@{/img/buttoncss_1.png}" />
-          <img class="notice" th:src="@{/img/notice.png}" />
-        </a>
-        <a th:href="@{#}" class="nav-button red">
-          <div>공지사항</div>
-          <img th:src="@{/img/buttoncss_2.png}" />
-        </a>
-        <a th:href="@{#}" class="nav-button blue">
-          <div>보호자 설문</div>
-          <img th:src="@{/img/buttoncss_3.png}" />
-        </a>
-        <a th:href="@{#}" class="nav-button yell">
-          <div>커뮤니티</div>
-          <img th:src="@{/img/buttoncss_4.png}" />
-        </a>
-      </nav>
     </section>
     <section id="part">
+    <nav class="protectorMain-topImg">
+      <a th:href="@{#}" class="nav-button gree">
+        <div>어르신 전용</div>
+        <img th:src="@{/img/buttoncss_1.png}" />
+        <img class="notice" th:src="@{/img/notice.png}" />
+      </a>
+      <a th:href="@{#}" class="nav-button red">
+        <div>공지사항</div>
+        <img th:src="@{/img/buttoncss_2.png}" />
+      </a>
+      <a th:href="@{#}" class="nav-button blue">
+        <div>보호자 설문</div>
+        <img th:src="@{/img/buttoncss_3.png}" />
+      </a>
+      <a th:href="@{#}" class="nav-button yell">
+        <div>커뮤니티</div>
+        <img th:src="@{/img/buttoncss_4.png}" />
+      </a>
+    </nav>
       <!-- 공지사항 -->
       <div class="protectorMain-notice">
         <h1>공지사항</h1>

@@ -29,7 +29,7 @@ public class UserController {
         try {
             UserSessionDTO sessionDTO = userService.loginUser(proMemPhone, proMemPassword);
             session.setAttribute("proMemNum", sessionDTO.getProMemNum());
-            session.setAttribute("proMemPhone", sessionDTO.getProMemName());
+            session.setAttribute("proMemName", sessionDTO.getProMemName());
         } catch (IllegalStateException e) {
             return "redirect:/alheum/user/login";
         }

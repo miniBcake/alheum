@@ -97,11 +97,12 @@ aside li{
   padding: 0 30px;
   list-style: none;
   font-weight: 500;
+  border-radius: 20px 0 0 20px;
   /* font-size: 20px; */
 }
 aside li:hover{
-  background-color: var(--color-back-lightgrey);
-  box-shadow: 0 0 3px 1px var(--color-shadow) inset;
+  background-color: var(--color-back-grey);
+  /*box-shadow: 0 0 3px 1px var(--color-shadow) inset;*/
 }
 
 /* main */

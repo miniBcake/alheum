@@ -14,7 +14,6 @@
     <script defer th:src="@{/js/protectorRecommend-common.js}"></script>
     <!-- header CSS -->
     <link rel="stylesheet" th:href="@{/css/headerNonMember.css}">
-    <link rel="stylesheet" th:href="@{/css/headerMember.css}">
     <!-- footer CSS -->
     <link rel="stylesheet" th:href="@{/css/footer.css}">
     <style>
@@ -40,7 +39,7 @@
                   <div class="option">
                       <div>
                           <form onsubmit="searchPlaces(); return false;">
-                              키워드 : <input type="text" value="역삼요양원" id="keyword" size="15">
+                              키워드 : <input type="text" value="역삼요양원" id="keyword" size="10">
                               <button type="submit">검색하기</button>
                           </form>
                       </div>
