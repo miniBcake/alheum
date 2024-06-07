@@ -35,75 +35,74 @@
 }
 
 /* 로그인 */
+input{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #E7E7E7;
+  margin: 10px 0;
+  outline-color: var(--color-main);
+}
+
+input::placeholder{
+  color: #B4B4B4;
+}
+
 .protectorLoginTitle p {
   color: var(--color-main);
   font-size: 40px;
+  font-weight: 600;
   text-align: center;
   margin-top: 100px;
 }
 
 .protectorLoginCnt {
-  width: 500px;
-  height: 350px;
+  width: 400px;
   margin: 30px auto 200px auto;
   border-radius: 10px;
   background-color: rgb(245, 245, 245);
-  box-shadow: inset 1px 1px 3px 1px rgba(0.15, 0.15, 0.15, 0.15);
+  box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  padding: 30px;
 }
 
-.protectorLoginMain {
-  width: 400px;
-  margin: auto;
-}
-
-.protectorLoginMainCnt {
-  position: relative;
-  top: 40px;
-}
 
 .protectorLoginNum,
 .protectorLoginPw {
-  color: var(--color-main);
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.protectorPhoneNum,
-.protectorPassword {
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
-  margin: 10px 0;
-  outline-color: rgb(226, 226, 226);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 3px 0 0 5px;
 }
 
 .protectorLoginBtn button {
-  width: 400px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   background-color: var(--color-main);
   color: white;
   font-size: 18px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .protectorLoginBtn button:hover {
   background-color: var(--color-main-hover);
-  box-shadow: 0 0 4px 2px var(--color-main-hover);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .protectorLogin-subMenu {
   display: flex;
   margin-top: 10px;
-  position: relative;
-  left: 90px;
+  justify-content: center;
 }
 
 .protectorLogin-subMenu a {
   margin: 0 10px;
   color: var(--color-main);
+}
+
+.protectorLogin-subMenu a:hover{
+  color: var(--color-main-hover);
 }
 
 .protectorLogin-subMenu p {

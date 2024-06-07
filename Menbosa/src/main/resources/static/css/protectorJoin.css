@@ -34,6 +34,32 @@
   user-select: none;
 }
 
+input{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #E7E7E7;
+  margin: 5px 0;
+  outline-color: var(--color-main);
+}
+
+input::placeholder{
+  color: #B4B4B4;
+}
+
+input[type="tel"]{
+  width: 80px;
+  text-align: center;
+}
+
+form p{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px 0 4px 5px;
+}
+
+
 /* 회원가입 */
 .protectorJoin-title {
   width: 970px;
@@ -44,44 +70,20 @@
 .protectorJoin-title p {
   color: var(--color-main);
   font-size: 40px;
+  font-weight: 600;
+  text-align: center;
   margin-top: 100px;
 }
 
 .protectorJoin-main {
-  width: 500px;
-  height: 800px;
-  margin: 30px auto 200px auto;
+  width: 400px;
+  margin: 30px auto 80px auto;
   border-radius: 10px;
   background-color: rgb(245, 245, 245);
-  box-shadow: inset 1px 1px 3px 1px rgba(0.15, 0.15, 0.15, 0.15);
+  box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  padding: 30px;
 }
 
-.protectorJoin-main form {
-  width: 400px;
-  margin: auto;
-  position: relative;
-  top: 40px;
-}
-
-.protectorJoin-nameTitle {
-  color: var(--color-main);
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.protectorJoin-name {
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
-  margin: 5px 0;
-  outline-color: rgb(226, 226, 226);
-}
-
-.protectorJoin-phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .protectorJoin-phone button:hover {
   background-color: var(--color-main-hover);
@@ -89,57 +91,12 @@
   cursor: pointer;
 }
 
-.protectorJoin-number {
-  width: 100px;
-  height: 50px;
-  margin: 0 5px;
-  border-radius: 5px;
-  outline-color: rgb(226, 226, 226);
-}
-
 .protectorJoin-phone button {
-  width: 100px;
-  height: 50px;
-  border-radius: 5px;
+  height: 48px;
+  border-radius: 25px;
+  padding: 0 20px;
   background-color: var(--color-main);
   color: white;
-  font-size: 14px;
-}
-
-.protectorJoin-inputNumber {
-  width: 400px;
-  height: 50px;
-  margin: 10px 5px;
-  border-radius: 5px;
-  outline-color: rgb(226, 226, 226);
-}
-
-.protectorJoin-password {
-  width: 400px;
-  height: 50px;
-  margin: 10px 0;
-  border-radius: 5px;
-  outline-color: rgb(226, 226, 226);
-}
-
-.protectorJoin-passwordVerify {
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
-  outline-color: rgb(226, 226, 226);
-}
-
-.protectorJoin-email {
-  width: 400px;
-  height: 50px;
-  margin: 10px 0;
-  border-radius: 5px;
-  outline-color: rgb(226, 226, 226);
-}
-
-.protectorJoin-checkbox p {
-  color: var(--color-main);
-  font-size: 20px;
 }
 
 .protectorJoin-checkboxAll {
@@ -158,31 +115,31 @@
   height: 30px;
 }
 
-.protectorJoin-checkCnt p {
-  font-size: 15px;
-}
-
-.protectorJoin-checked {
+.protectorJoin-checked, .protectorJoin-check  {
   width: 20px;
   height: 20px;
 }
 
-.protectorJoin-check {
-  width: 15px;
-  height: 15px;
+.protectorJoin-checkCnt p, protectorJoin-submit p{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.protectorJoin-checked:checked, .protectorJoin-check:checked{
+  background-color: var(--color-main);
 }
 
 .protectorJoin-submit button {
-  width: 400px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   background-color: var(--color-main);
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 .protectorJoin-submit button:hover {
   background-color: var(--color-main-hover);
-  box-shadow: 0 0 4px 2px var(--color-main-hover);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }

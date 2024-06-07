@@ -30,13 +30,13 @@
     <select id="selectUser" resultType="Long">
         SELECT PRO_MEM_NUM
         FROM MBS_PRO_MEMBER
-        WHERE PRO_MEM_PHONE_MID || PRO_MEM_PHONE_BACK = #{proMemPhone} AND PRO_MEM_PASSWORD = #{proMemPassword}
+        WHERE '010' || PRO_MEM_PHONE_MID || PRO_MEM_PHONE_BACK = #{proMemPhone} AND PRO_MEM_PASSWORD = #{proMemPassword}
     </select>
     
     <select id="selectUserInfo" resultType="UserSessionDTO">
-        SELECT PRO_MEM_PHONE_MID || PRO_MEM_PHONE_BACK, PRO_MEM_NUM, PRO_MEM_NAME
+        SELECT '010' || PRO_MEM_PHONE_MID || PRO_MEM_PHONE_BACK, PRO_MEM_NUM, PRO_MEM_NAME
         FROM MBS_PRO_MEMBER
-        WHERE PRO_MEM_PHONE_MID || PRO_MEM_PHONE_BACK = #{proMemPhone} AND PRO_MEM_PASSWORD = #{proMemPassword}
+        WHERE '010' || PRO_MEM_PHONE_MID || PRO_MEM_PHONE_BACK = #{proMemPhone} AND PRO_MEM_PASSWORD = #{proMemPassword}
     </select>
 
 <!--    <select id="selectUserEmail" resultType="UserSessionDTO">-->

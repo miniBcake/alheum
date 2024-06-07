@@ -28,9 +28,11 @@
       <div class="protectorLoginMain">
         <form class="protectorLoginMainCnt" action="" method="post">
           <p class="protectorLoginNum">전화번호</p>
-          <input name="proMemPhone" type="text" class="protectorPhoneNum" placeholder="전화번호를 입력해주세요.">
+          <input name="proMemPhone" type="text" placeholder="숫자만 입력하세요 (ex.01012341234)" required
+          oninvalid="this.setCustomValidity('전화번호 11자리를 숫자만 입력하세요')">
           <p class="protectorLoginPw">비밀번호</p>
-          <input name="proMemPassword" type="password" class="protectorPassword" placeholder="비밀번호를 입력해주세요.">
+          <input name="proMemPassword" type="password" placeholder="비밀번호를 입력하세요" required
+                 oninvalid="this.setCustomValidity('비밀번호를 입력하세요')">
           <div class="protectorLoginBtn">
             <button>로그인</button>
           </div>
